@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+  height: 6px;
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--secundary-color);
+}
+
+:root {
+  --main-color: rgba(247, 6, 247, 0.911);
+  --secundary-color: rgba(255, 136, 255, 0.897);
+}
+
+.todo__main {
+  background-color: #a39bd2;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #494a4b;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+  padding-bottom: 5rem;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  min-width: 250px;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 5px 9px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 5px 9px 2px rgba(0, 0, 0, 0.5);
+  background: #f1f5f8;
+  margin-bottom: 5rem;
+  /* Para hacer los puntos del container */
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+}
+
+.todo__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 567px) {
+  .todo__heading {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+
+.heading__img {
+  width: 25%;
+}
+
+.heading__title {
+  transform: rotate(2deg);
+  background-color: var(--main-color);
+  margin: 0;
+  border-radius: 11% 89% 6% 94% / 95% 10% 90% 5%;
+  padding: 0.5rem;
+  font-size: 3.5rem;
+}
+
+.todo__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__title {
+  font-size: 3rem;
+}
+
+.form__input__group {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.form__input {
+  border: 2px solid transparent;
+  border-bottom: 0.25rem dashed var(--main-color);
+  width: 50%;
+  padding: 1rem;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.form__input:focus-visible {
+  outline: none;
+}
+
+.form__btn {
+  padding: 1rem 1.75rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.form__btn:focus {
+  outline: none;
+}
+
+.todo__items {
+  text-align: left;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 567px) {
+  .todo__items {
+    margin-left: 3rem;
+  }
+}
+
+.todo__items__list {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.todo__item__container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.todo__item {
+  cursor: pointer;
+  overflow: auto;
+}
+
+.todo__item:hover,
+.todo__done {
+  text-decoration: line-through;
+}
+
+.todo__item__delete {
+  background-color: rgb(220, 20, 60);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.todo__item__delete:hover {
+  background-color: rgb(158, 25, 47);
+}

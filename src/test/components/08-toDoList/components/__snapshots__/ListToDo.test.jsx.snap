@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test del componente <ListToDo /> debe de mostrarse correctamente 1`] = `
+<section
+  className="todo__items"
+>
+  <ul
+    className="todo__items__list"
+  >
+    <div
+      className="todo__item__container"
+      key="1"
+    >
+      <TodoListItem
+        handleDelete={[MockFunction]}
+        handleToggle={[MockFunction]}
+        todo={
+          Object {
+            "desc": "hacer esto",
+            "done": false,
+            "id": 1,
+          }
+        }
+      />
+    </div>
+    <div
+      className="todo__item__container"
+      key="2"
+    >
+      <TodoListItem
+        handleDelete={[MockFunction]}
+        handleToggle={[MockFunction]}
+        todo={
+          Object {
+            "desc": "Hacer aquello otro",
+            "done": true,
+            "id": 2,
+          }
+        }
+      />
+    </div>
+    <div
+      className="todo__item__container"
+      key="4"
+    >
+      <TodoListItem
+        handleDelete={[MockFunction]}
+        handleToggle={[MockFunction]}
+        todo={
+          Object {
+            "desc": "Hacer aquello otro2",
+            "done": true,
+            "id": 4,
+          }
+        }
+      />
+    </div>
+  </ul>
+</section>
+`;

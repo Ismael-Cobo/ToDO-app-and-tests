@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en el componente <ListToDo /> debe de mostrarse correctamente 1`] = `
+<Fragment>
+  <li
+    className="todo__item "
+  >
+    <p
+      className="todo__item__text"
+      onClick={[Function]}
+    >
+      hacer esto
+    </p>
+  </li>
+  <button
+    className="todo__item__delete"
+    onClick={[Function]}
+  >
+    Borrar
+  </button>
+</Fragment>
+`;
